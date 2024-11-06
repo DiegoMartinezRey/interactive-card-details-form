@@ -7,6 +7,76 @@
     <title>Document</title>
   </head>
   <body>
+    <main class="container">
+      <div class="card-container">
+        <div class="cardBack-style">
+          <span>000</span>
+        </div>
+        <div class="cardFront-style">
+          <img src="/assets/images/card-logo.svg" alt="card logo" />
+          <div class="info-card">
+            <span>0000 0000 0000 0000</span>
+            <div class="name-card">
+              <span>Jane Appleseed</span>
+              <span>00/00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form id="form" class="form">
+        <div class="label-form">
+          <label for="card-name" class="label-text">Cardholder Name</label>
+          <input
+            type="text"
+            id="card-name"
+            class="label-input"
+            placeholder="e.g. Jane Appleseed"
+          />
+        </div>
+        <div class="label-form">
+          <label for="card-number" class="label-text">Card Number</label>
+          <input
+            type="text"
+            id="card-number"
+            class="label-input"
+            maxlength="16"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <div class="date-cvc-container">
+          <div class="label-form size-date-cvc">
+            <label id="card-date" class="label-text">Exp. Date (MM/YY)</label>
+            <div>
+              <input
+                type="text"
+                id="card-mounth"
+                class="label-input size-date"
+                maxlength="2"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                id="card-year"
+                class="label-input size-date"
+                maxlength="2"
+                placeholder="YY"
+              />
+            </div>
+          </div>
+          <div class="label-form size-date-cvc">
+            <label for="card-cvc" class="label-text">CVC</label>
+            <input
+              type="text"
+              id="card-cvc"
+              class="label-input size-cvc"
+              maxlength="3"
+              placeholder="e.g. 123"
+            />
+          </div>
+        </div>
+        <input type="submit" class="form-submit" value="Confirm" />
+      </form>
+    </main>
     <script src="/js/scripts.js"></script>
   </body>
 </html>
