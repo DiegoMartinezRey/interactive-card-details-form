@@ -188,6 +188,10 @@ body {
   max-width: 100%;
 }
 
+.errorInput {
+  border: 1px solid red;
+}
+
 .form-submit {
   width: 100%;
   padding: 13px;
